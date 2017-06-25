@@ -1,13 +1,13 @@
 # UEditor 配置一个带有插件的Deno 
 ## 内容目录
-1. [创建Demo文件 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#创建demo文件)<br>
-1.1[创建Demo.html并引入js文件 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#1-创建demohtml并引入js文件)<br>
-1.2[加载编辑器的容器 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#2-加载编辑器的容器)<br>
-1.3[实例化编辑器并配置编辑器 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#3-实例化编辑器并配置编辑器更多其他参数请参考ueditorconfigjs中的配置项)<br>
-1.4[在浏览器上打开demo.html ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#4-在浏览器上打开demohtml)<br>
-2. [为demo.html添加表单设计器（leipi.Formdesign) ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#为demohtml添加表单设计器leipiformdesign)<br>
-2.1[引入Fromdesign扩展文件 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#1-引入fromdesign扩展文件)<br>
-2.2[添加文本框按钮（以文本框为例） ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#2-添加文本框按钮以文本框为例)<br>
+1. [创建Demo文件 ``(Update on 2017.6.25)``](#创建demo文件)<br>
+1.1[创建Demo.html并引入js文件 ``(Update on 2017.6.25)``](#1-创建demohtml并引入js文件)<br>
+1.2[加载编辑器的容器 ``(Update on 2017.6.25)``](#2-加载编辑器的容器)<br>
+1.3[实例化编辑器并配置编辑器 ``(Update on 2017.6.25)``](#3-实例化编辑器并配置编辑器更多其他参数请参考ueditorconfigjs中的配置项)<br>
+1.4[在浏览器上打开demo.html ``(Update on 2017.6.25)``](#4-在浏览器上打开demohtml)<br>
+2. [为demo.html添加表单设计器（leipi.Formdesign) ``(Update on 2017.6.25)``](#为demohtml添加表单设计器leipiformdesign)<br>
+2.1[引入Fromdesign扩展文件 ``(Update on 2017.6.25)``](#1-引入fromdesign扩展文件)<br>
+2.2[添加文本框按钮（以文本框为例） ``(Update on 2017.6.25)``](#2-添加文本框按钮以文本框为例)<br>
 2.3[触发拓展 ``(Update on 2017.6.25)``](#3-触发拓展)
 
 ## 创建Demo文件
