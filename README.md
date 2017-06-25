@@ -1,6 +1,6 @@
 # UEditor 配置一个带有插件的Deno 
 ## 内容目录
-  1. [触发拓展](#触发拓展)
+  1. [触发拓展](https://github.com/hizhuzhan/UEditor/blob/master/README.md#内容目录)
 
 1. [创建Demo文件(Update on 2017.6.25)](#创建Demo文件)<br>
     1.1[创建Demo.html并引入js文件](#创建Demo.html并引入js文件)<br>
