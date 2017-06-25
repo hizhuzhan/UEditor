@@ -1,5 +1,5 @@
 # UEditor 配置一个带有插件的Deno Update on 2017.6.25
-### 创建Demo文件
+## 创建Demo文件
 ##### UEditor路径：github.com/hizhuzhan/UEditor/js/ueditor/*
 * 创建Demo.html并引入js文件
 ```javascript
@@ -134,4 +134,6 @@ toolbars: [
     ]
 ]
 ```
+* 在浏览器上打开demo.html
+![demo.html](https://github.com/hizhuzhan/UEditor/raw/master/img/demo.png)
 
