@@ -18,10 +18,23 @@
     这里写你的初始化内容
 </script>
 ```
-* 实例化编辑器
+* 实例化编辑器并配置编辑器（更多其他参数，请参考ueditor.config.js中的配置项）
 ```javascript
-<script type="text/javascript">
-        var ue = UE.getEditor('container');
-</script>
+var leipiEditor = UE.getEditor('myFormdesign',{
+            //是否在toolbars显示，表单设计器的图标 
+            toolleipi:true,
+            //配置显示的按钮
+            toolbars:[['fullscreen', 'source', '|', 'undo', 'redo', '|','bold', 'italic', 'underline', 'fontborder', 'strikethrough',  'removeformat', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist','|', 'fontfamily', 'fontsize', '|', 'indent', '|', 'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|',  'link', 'unlink',  '|',  'horizontal',  'spechars',  'wordimage', '|', 'inserttable', 'deletetable',  'mergecells',  'splittocells']],
+            //编辑器的表单名称   
+            textarea: 'design_content',
+            //关闭字数统计
+            wordCount:false,
+            //关闭elementPath
+            elementPathEnabled:false,
+            //默认的编辑区域高度
+            initialFrameHeight:400,
+            //默认的编辑区域宽度
+            initialFrameWidth:1000
+        });
 ```
 
