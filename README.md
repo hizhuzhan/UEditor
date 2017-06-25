@@ -8,7 +8,7 @@
 2. [为demo.html添加表单设计器（leipi.Formdesign) ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#为demohtml添加表单设计器leipiformdesign)<br>
 2.1[引入Fromdesign扩展文件 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#1-引入fromdesign扩展文件)<br>
 2.2[添加文本框按钮（以文本框为例） ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#2-添加文本框按钮以文本框为例)<br>
-2.3[触发拓展 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#3-触发拓展)
+2.3[触发拓展 ``(Update on 2017.6.25)``](#3-触发拓展)
 
 ## 创建Demo文件
 ##### UEditor路径：github.com/hizhuzhan/UEditor/js/ueditor/*
