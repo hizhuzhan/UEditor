@@ -20,6 +20,8 @@
 ```
 * 实例化编辑器
 ```javascript
-
+<script type="text/javascript">
+        var ue = UE.getEditor('container');
+</script>
 ```
 
