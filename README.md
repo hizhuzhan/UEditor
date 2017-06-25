@@ -1,6 +1,6 @@
 # UEditor 配置一个带有插件的Deno 
 ## 内容目录
-1. [创建Demo文件 (Update on 2017.6.25)](https://github.com/hizhuzhan/UEditor#创建demo文件)<br>
+1. [创建Demo文件 ``(Update on 2017.6.25)``](https://github.com/hizhuzhan/UEditor#创建demo文件)<br>
 1.1[创建Demo.html并引入js文件 (Update on 2017.6.25)](https://github.com/hizhuzhan/UEditor#1-创建demohtml并引入js文件)<br>
 1.2[加载编辑器的容器 (Update on 2017.6.25)](https://github.com/hizhuzhan/UEditor#2-加载编辑器的容器)<br>
 1.3[实例化编辑器并配置编辑器 (Update on 2017.6.25)](https://github.com/hizhuzhan/UEditor#3-实例化编辑器并配置编辑器更多其他参数请参考ueditorconfigjs中的配置项)<br>
