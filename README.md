@@ -160,7 +160,7 @@ toolbars: [
 <button type="button" onclick="leipiFormDesign.exec('text');" class="btn btn-info">文本框</button>
 ```
 * 触发拓展
-#####以文本框威为例，上面我们实例化了一个Ueditor为leipiEditor，触发扩展只需要调用Ueditor方法execCommand。
+##### 以文本框威为例，上面我们实例化了一个Ueditor为leipiEditor，触发扩展只需要调用Ueditor方法execCommand。
 ```javascript
 /*执行扩展 UE.plugins[method] 弹出iframe dialog。
 method 为方法参数，文本框按钮点击后将'text'参数传入此方法
