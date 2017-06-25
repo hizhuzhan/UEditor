@@ -1,6 +1,14 @@
-# UEditor 配置一个带有插件的Deno (Update on 2017.6.25)
+# UEditor 配置一个带有插件的Deno 
 ## 内容目录
-1. [创建Demo文件](#创建Demo文件)
+1. [创建Demo文件(Update on 2017.6.25)](#创建Demo文件)
+    1.1[创建Demo.html并引入js文件](#创建Demo.html并引入js文件)
+    1.2[加载编辑器的容器](#加载编辑器的容器)
+    1.3[实例化编辑器并配置编辑器](实例化编辑器并配置编辑器（更多其他参数，请参考ueditor.config.js中的配置项）)
+    1.4[在浏览器上打开demo.html](#在浏览器上打开demo.html)
+2. [为demo.html添加表单设计器（leipi.Formdesign) (Update on 2017.6.25)](#为demo.html添加表单设计器（leipi.Formdesign）)
+    2.1[引入Fromdesign扩展文件](#引入Fromdesign扩展文件)
+    2.2[添加文本框按钮（以文本框为例）](#添加文本框按钮（以文本框为例）)
+    2.3[触发拓展](#触发拓展)
 
 ## 创建Demo文件
 ##### UEditor路径：github.com/hizhuzhan/UEditor/js/ueditor/*
@@ -149,7 +157,8 @@ toolbars: [
 ```javascript
 <button type="button" onclick="leipiFormDesign.exec('text');" class="btn btn-info">文本框</button>
 ```
-* 以文本框威为例，上面我们实例化了一个Ueditor为leipiEditor，触发扩展只需要调用Ueditor方法execCommand。
+* 触发拓展
+#####以文本框威为例，上面我们实例化了一个Ueditor为leipiEditor，触发扩展只需要调用Ueditor方法execCommand。
 ```javascript
 /*执行扩展 UE.plugins[method] 弹出iframe dialog。
 method 为方法参数，文本框按钮点击后将'text'参数传入此方法
