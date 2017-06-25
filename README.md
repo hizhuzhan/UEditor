@@ -36,6 +36,8 @@ var leipiEditor = UE.getEditor('myFormdesign',{
             //默认的编辑区域宽度
             initialFrameWidth:1000
         });
+```
+```javascript
 //完整按钮列表
 toolbars: [
     [
