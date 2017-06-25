@@ -2,15 +2,15 @@
 ## 内容目录
   1. [触发拓展](https://github.com/hizhuzhan/UEditor/blob/master/README.md#内容目录)
 
-1. [创建Demo文件(Update on 2017.6.25)](#创建Demo文件)<br>
-    1.1[创建Demo.html并引入js文件](#创建Demo.html并引入js文件)<br>
-    1.2[加载编辑器的容器](#加载编辑器的容器)<br>
-    1.3[实例化编辑器并配置编辑器](实例化编辑器并配置编辑器（更多其他参数，请参考ueditor.config.js中的配置项）)<br>
-    1.4[在浏览器上打开demo.html](#在浏览器上打开demo.html)<br>
-2. [为demo.html添加表单设计器（leipi.Formdesign) (Update on 2017.6.25)](#为demo.html添加表单设计器（leipi.Formdesign）)<br>
-    2.1[引入Fromdesign扩展文件](#引入Fromdesign扩展文件)<br>
-    2.2[添加文本框按钮（以文本框为例）](#添加文本框按钮（以文本框为例）)<br>
-    2.3[触发拓展](#触发拓展)
+1. [创建Demo文件(Update on 2017.6.25)](https://github.com/hizhuzhan/UEditor/blob/master/README.md#创建Demo文件)<br>
+    1.1[创建Demo.html并引入js文件](https://github.com/hizhuzhan/UEditor/blob/master/README.md#创建Demo.html并引入js文件)<br>
+    1.2[加载编辑器的容器](https://github.com/hizhuzhan/UEditor/blob/master/README.md#加载编辑器的容器)<br>
+    1.3[实例化编辑器并配置编辑器](https://github.com/hizhuzhan/UEditor/blob/master/README.md#实例化编辑器并配置编辑器（更多其他参数，请参考ueditor.config.js中的配置项）)<br>
+    1.4[在浏览器上打开demo.html](https://github.com/hizhuzhan/UEditor/blob/master/README.md#在浏览器上打开demo.html)<br>
+2. [为demo.html添加表单设计器（leipi.Formdesign) (Update on 2017.6.25)](https://github.com/hizhuzhan/UEditor/blob/master/README.md#为demo.html添加表单设计器（leipi.Formdesign）)<br>
+    2.1[引入Fromdesign扩展文件](https://github.com/hizhuzhan/UEditor/blob/master/README.md#引入Fromdesign扩展文件)<br>
+    2.2[添加文本框按钮（以文本框为例）](https://github.com/hizhuzhan/UEditor/blob/master/README.md#添加文本框按钮（以文本框为例）)<br>
+    2.3[触发拓展](https://github.com/hizhuzhan/UEditor/blob/master/README.md#触发拓展)
 
 ## 创建Demo文件
 ##### UEditor路径：github.com/hizhuzhan/UEditor/js/ueditor/*
