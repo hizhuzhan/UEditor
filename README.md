@@ -14,7 +14,7 @@
 
 ## 创建Demo文件
 ##### UEditor路径：github.com/hizhuzhan/UEditor/js/ueditor/*
-* 创建Demo.html并引入js文件
+#### 创建Demo.html并引入js文件
 ```javascript
 <!-- 配置文件 config.js -->
 <script type="text/javascript" charset="utf-8" src="js/ueditor/ueditor.config.js"></script>
@@ -23,13 +23,13 @@
 <!-- zh-cn.js -->
 <script type="text/javascript" charset="utf-8" src="js/ueditor/lang/zh-cn/zh-cn.js"></script>
 ```
-* 加载编辑器的容器
+#### 加载编辑器的容器
 ```javascript
 <script id="container" name="content" type="text/plain">
     这里写你的初始化内容
 </script>
 ```
-* 实例化编辑器并配置编辑器（更多其他参数，请参考ueditor.config.js中的配置项）
+#### 实例化编辑器并配置编辑器（更多其他参数，请参考ueditor.config.js中的配置项）
 ```javascript
 <script type="text/javascript">
     var leipiEditor = UE.getEditor('myFormdesign',{
@@ -147,19 +147,19 @@ toolbars: [
     ]
 ]
 ```
-* 在浏览器上打开demo.html<br>
+#### 在浏览器上打开demo.html<br>
 ![demo.html](https://github.com/hizhuzhan/UEditor/raw/master/img/demo.png)
 ## 为demo.html添加表单设计器（leipi.Formdesign）
-* 引入Fromdesign扩展文件
+#### 引入Fromdesign扩展文件
 ```javascript
 <!--Fromdesign扩展-->
 <script type="text/javascript" charset="utf-8" src="js/ueditor/Formdesign/leipi.Formdesign.v4.js"></script>
 ```
-* 添加文本框按钮（以文本框为例）
+#### 添加文本框按钮（以文本框为例）
 ```javascript
 <button type="button" onclick="leipiFormDesign.exec('text');" class="btn btn-info">文本框</button>
 ```
-* 触发拓展
+#### 触发拓展
 ##### 以文本框威为例，上面我们实例化了一个Ueditor为leipiEditor，触发扩展只需要调用Ueditor方法execCommand。
 ```javascript
 /*执行扩展 UE.plugins[method] 弹出iframe dialog。
