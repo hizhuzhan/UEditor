@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>文本框</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+    <meta name="generator" content="www.leipi.org" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="leipi.style.css">
+    <script type="text/javascript" src="../dialogs/internal.js"></script>
+    <script type="text/javascript" src="js/add_line_1_4.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<style type="text/css">
+/*div模拟复选框CSS*/
+ul,li{ margin:0; padding:0; font-size:14px;}
+ul,li{list-style:none;}
+.divselect{width:220px; z-index:10000;}
+.divselect cite{height:28px;line-height:28px; display:block; color:#807a62; cursor:pointer;font-size:14px;
+padding-left:6px; padding-right:28px; border:1px solid #dadada; 
+background:url(images/xjt.png) no-repeat right center; border-radius: 4px;}
+.divselect ul{width:220px;border:1px solid #333333; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
+.divselect ul li{height:24px; line-height:24px;}
+.divselect ul li a{display:block; height:24px; color:#333333; text-decoration:none; padding-left:10px; padding-right:10px;}
+.divselect ul li a:hover{background-color:#CCC;}
+</style>
+
+<script type="text/javascript">
+//由于select中的option当中不支持onckick事件，所以用div模拟一个select控件
+
+jQuery.divselect = function(divselectid) {
+  $(divselectid+" cite").click(function(){
+    var ul = $(divselectid+" ul");
+
+    var text_2 = $("#column_2").html();
+    var text_4 = $("#column_4").html();
+
+    if(divselectid == "#divselect_1"){
+        if (text_4 != "") {
+            alert("请先提交第四列控件");
+        }else{
+            if(ul.css("display")=="none"){
+              ul.slideDown("fast");
+            }else{
+              ul.slideUp("fast");
+            }
+        }
+    }
+
+    if(divselectid == "#divselect_2"){
+        if (text_2 != "") {
+            alert("请先提交第二列控件");
+        }else{
+            if(ul.css("display")=="none"){
+              ul.slideDown("fast");
+            }else{
+              ul.slideUp("fast");
+            }
+        }
+    }
+
+    
+  });
+  $(divselectid+" ul li a").click(function(){
+    var txt = $(this).text();
+    $(divselectid+" cite").html(txt);
+    $(divselectid+" ul").hide();
+    $(divselectid+" cite").css("color", "#555555");
+    if (txt == "取消选择") {
+        $(divselectid+" cite").html("请选择控件");
+        $(divselectid+" cite").css("color", "#807a62");
+    }
+  });
+};
+$(function(){
+    $.divselect("#divselect_1");
+    $.divselect("#divselect_2");
+});
+</script>
+<body>
+<div class="content">
+    <table class="table table-bordered table-striped table-hover">
+        <tr>
+            <th>
+                <span><strong style="font-size:18px;">第一列输入文本：</strong></span>
+            </th>
+            <th>
+                <span><strong style="font-size:18px;">第二列选择控件：</strong></span> 
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="text_1" placeholder="无则不填">
+            </td>
+            <td>
+                <!-- <select id="select_one" onclick="select_opinion('2');">
+                    <option value="hint" selected>请选择控件</option>
+                    <option onclick="a();" value="text">文本框</option>
+                    <option onclick="select_1('textarea');" value="textarea">多行文本</option>
+                    <option onclick="select_1('select');" value="select">下拉菜单</option>
+                    <option onclick="select_1('radios');" value="radios">单选框</option>
+                    <option onclick="select_1('checkboxs');" value="checkboxs">复选框</option>
+                    <option onclick="onCancle(2);" value="cancle">取消选择</option>
+                </select> -->
+                <div id="divselect_1" class="divselect">
+                  <cite>请选择控件</cite>
+                  <ul>
+                     <li><a href="javascript:select_1('text');" selectid="1">文本框</a></li>
+                     <li><a href="javascript:select_1('textarea');" selectid="2">多行文本</a></li>
+                     <li><a href="javascript:select_1('select');" selectid="3">下拉菜单</a></li>
+                     <li><a href="javascript:select_1('radios');" selectid="4">单选框</a></li>
+                     <li><a href="javascript:select_1('checkboxs');" selectid="5">复选框</a></li>
+                     <li><a href="javascript:onCancle(2);" selectid="5" style="background-color: #CCC">取消选择</a></li>
+                  </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- ==============================================控件选择_column_2============================================== -->
+    <div id="column_2" class="column_2"></div>
+    <!-- ==============================================控件选择_column_2============================================== -->
+    <table class="table table-bordered table-striped table-hover">
+        <tr>
+            <th>
+                <span><strong style="font-size:18px;">第三列输入文本：</strong></span>
+            </th>
+            <th>
+                <span><strong style="font-size:18px;">第四列选择控件：</strong></span> 
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="text_2" placeholder="无则不填">
+            </td>
+            <td>
+                <!-- <select id="select_two" onclick="select_opinion(4)">
+                    <option value="hint" selected>请选择控件</option>
+                    <option onclick="select_2('text');" value="text">文本框</option>
+                    <option onclick="select_2('textarea');" value="textarea">多行文本</option>
+                    <option onclick="select_2('select');" value="select">下拉菜单</option>
+                    <option onclick="select_2('radios');" value="radios">单选框</option>
+                    <option onclick="select_2('checkboxs');" value="checkboxs">复选框</option>
+                    <option onclick="onCancle(4);" value="cancle">取消选择</option>
+                </select> -->
+                <div id="divselect_2" class="divselect">
+                  <cite>请选择控件</cite>
+                  <ul>
+                     <li><a href="javascript:select_2('text');" selectid="1">文本框</a></li>
+                     <li><a href="javascript:select_2('textarea');" selectid="2">多行文本</a></li>
+                     <li><a href="javascript:select_2('select');" selectid="3">下拉菜单</a></li>
+                     <li><a href="javascript:select_2('radios');" selectid="4">单选框</a></li>
+                     <li><a href="javascript:select_2('checkboxs');" selectid="5">复选框</a></li>
+                     <li><a href="javascript:onCancle(4);" selectid="5" style="background-color: #CCC">取消选择</a></li>
+                  </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- ==============================================控件选择_column_4============================================== -->
+    <div id="column_4" class="column_4"></div>
+    <!-- ==============================================控件选择_column_4============================================== -->
+</div>
+</body>
+</html>
+
+
+
+
+

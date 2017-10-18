@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor demo</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script type="text/javascript" src="js/ueditor/dialogs/internal.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <!-- 定义自定义布局按钮 -->
+        <div class="top">
+            <div class="line">
+                单独插入
+            </div>
+                <button type="button" onclick="formDesign.exec('text');" class="btn btn-info">文本框</button>
+                <button type="button" onclick="formDesign.exec('textarea');" class="btn btn-info">多行文本</button>
+                <button type="button" onclick="formDesign.exec('select');" class="btn btn-info">下拉菜单</button>
+                <button type="button" onclick="formDesign.exec('radios');" class="btn btn-info">单选框</button>
+                <button type="button" onclick="formDesign.exec('checkboxs');" class="btn btn-info">复选框</button>
+        </div>
+        <div class="top"> 
+            <div class="line">
+                一行一列
+            </div>
+            <button type="button" onclick="add_line_1_1();" class="btn btn-info">无格式</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_1_text')" class="btn btn-info">文本框</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_1_textarea')" class="btn btn-info">多行文本</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_1_select')" class="btn btn-info">下拉菜单</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_1_radios')" class="btn btn-info">单选框</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_1_checkboxs')" class="btn btn-info">复选框</button>
+        </div>
+        <div class="top"> 
+            <div class="line">
+                一行两列
+            </div>
+            <button type="button" onclick="add_line_1_2();" class="btn btn-info">无格式</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_2_text')" class="btn btn-info">文本框</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_2_textarea')" class="btn btn-info">多行文本</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_2_select')" class="btn btn-info">下拉菜单</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_2_radios')" class="btn btn-info">单选框</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_2_checkboxs')" class="btn btn-info">复选框</button>
+        </div>
+        <div class="top"> 
+            <div class="line">
+                综合
+            </div>
+            <button type="button" onclick="add_line_1_4();" class="btn btn-info">无格式</button>
+            <button type="button" onclick="formDesign.exec('add_line_1_4')" class="btn btn-info" style="width: 140px">一行四列选择控件</button>
+            <button type="button" onclick="getHtml()" class="btn btn-info" style="width: 150px">格式化并显示HTML</button>
+            <button type="button" onclick="window.open('http://tool.oschina.net/codeformat/js/')" class="btn btn-info" style="width: 100px">格式化代码</button>
+        </div>
+        <div class="scanf">
+            <!-- 输入框 -->
+            <script id="myFormdesign" type="text/plain" style="widht:100%">
+            
+            </script>
+            <script type="text/javascript" charset="utf-8" src="js/ueditor/ueditor.config.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/ueditor/ueditor.all.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/ueditor/lang/zh-cn/zh-cn.js"></script>
+            <!-- Fromdesign扩展 -->
+            <script type="text/javascript" charset="utf-8" src="js/ueditor/Formdesign/leipi.Formdesign.v4.js"></script>
+
+            <script type="text/javascript" charset="utf-8" src="js/demo.js"></script>
+
+        </div>
+        <textarea id="textarea"></textarea>
+    </div>
+</body>
+</html>
